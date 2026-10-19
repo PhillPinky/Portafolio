@@ -1,4 +1,4 @@
-import foto from "../assets/img/perfil.png";
+import foto from "../assets/img/Perfil.png";
 
 export const perfil = {
   nombre: "Valentina Cordero",
