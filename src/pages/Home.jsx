@@ -1,10 +1,9 @@
-import { Row, Col } from "antd";
-import MainLayout from "../templates/MainLayout";
-import Presentacion from "../organisms/Presentacion";
-import Proyectos from "../organisms/Proyectos";
-import Experiencia from "../organisms/Experiencia";
-import Estudios from "../organisms/Estudios";
-import Contacto from "../organisms/Contacto";
+import MainLayout from "../components/templates/MainLayout";
+import Presentacion from "../components/organisms/Presentacion";
+import Proyectos from "../components/organisms/Proyectos";
+import Experiencia from "../components/organisms/Experiencia";
+import Estudios from "../components/organisms/Estudios";
+import Contacto from "../components/organisms/Contacto";
 
 const Home = () => (
   <MainLayout>
