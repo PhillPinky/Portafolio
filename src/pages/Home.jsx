@@ -4,6 +4,8 @@ import Proyectos from "../components/organisms/Proyectos";
 import Experiencia from "../components/organisms/Experiencia";
 import Estudios from "../components/organisms/Estudios";
 import Contacto from "../components/organisms/Contacto";
+import { Row, Col } from "antd";
+
 
 const Home = () => (
   <MainLayout>
