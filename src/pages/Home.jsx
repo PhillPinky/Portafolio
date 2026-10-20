@@ -4,15 +4,27 @@ import Proyectos from "../components/organisms/Proyectos";
 import Experiencia from "../components/organisms/Experiencia";
 import Estudios from "../components/organisms/Estudios";
 import Contacto from "../components/organisms/Contacto";
+import Marco from "../components/molecules/Marco"; 
 import { Row, Col } from "antd";
-
 
 const Home = () => (
   <MainLayout>
     <Row gutter={[24, 24]}>
-    <Col xs={24} lg={6}><Presentacion /></Col>
-    <Col xs={24} lg={12}><Proyectos /></Col>
-    <Col xs={24} lg={6}><Experiencia /><Estudios /></Col>
+      {/* Columna Izquierda con Marco */}
+      <Col xs={24} lg={6}>
+        <Marco>
+          <Presentacion />
+        </Marco>
+      </Col>
+      <Col xs={24} lg={12}>
+        <Proyectos />
+      </Col>
+      <Col xs={24} lg={6}>
+        <Marco>
+          <Experiencia />
+          <Estudios />
+        </Marco>
+      </Col>
     </Row>
     <Contacto />
   </MainLayout>

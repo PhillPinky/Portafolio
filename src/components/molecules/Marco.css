@@ -1,0 +1,12 @@
+.marco {
+  border: 50px solid transparent;
+  border-image: url("../../assets/img/FondoItem_recortado.png") 52 fill / 50px / 0 round;
+  padding: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .marco {
+    border-width: 28px;
+    border-image-width: 28px;
+  }
+}
