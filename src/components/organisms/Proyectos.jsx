@@ -1,23 +1,24 @@
 import { Row, Col } from "antd";
-import Title from "../atoms/Title";
+import VentanaRetro from "../molecules/VentanaRetro"; // Ajusta la ruta si es necesario
 import TarjetaProyecto from "../molecules/TarjetaProyecto";
 import { proyectos } from "../../data/proyectos";
 
 const Proyectos = () => (
   <section>
-    <Title level={2}>Proyectos</Title>
-    <Row gutter={[16, 16]}>
-      {proyectos.map((proyecto) => (
-        <Col key={proyecto.id} xs={24} md={12}>
-          <TarjetaProyecto
-            titulo={proyecto.titulo}
-            imagenes={proyecto.imagenes}
-            repositorio={proyecto.repositorio}
-            leyenda={proyecto.leyenda}
-          />
-        </Col>
-      ))}
-    </Row>
+    <VentanaRetro titulo="Proyectos">
+      <Row gutter={[16, 16]}>
+        {proyectos.map((proyecto) => (
+          <Col key={proyecto.id} xs={20} md={24} >
+            <TarjetaProyecto
+              titulo={proyecto.titulo}
+              imagenes={proyecto.imagenes}
+              repositorio={proyecto.repositorio}
+              leyenda={proyecto.leyenda}
+            />
+          </Col>
+        ))}
+      </Row>
+    </VentanaRetro>
   </section>
 );
 

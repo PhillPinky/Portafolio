@@ -1,0 +1,57 @@
+.ventana {
+  border: 1px solid rgba(40, 60, 90, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.ventana__barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.75rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(160, 200, 235, 0.6));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(40, 60, 90, 0.4);
+}
+
+.ventana__botones {
+  display: flex;
+  gap: 2px;
+}
+
+.ventana__botones span {
+  width: 28px;
+  text-align: center;
+  font-size: 0.8rem;
+  border: 1px solid rgba(40, 60, 90, 0.5);
+  border-radius: 3px;
+  background: linear-gradient(#ffffff, #cfe0f2);
+}
+
+.ventana__botones .ventana__cerrar {
+  width: 42px;
+  color: white;
+  background: linear-gradient(#f0a090, #c0392b);
+}
+
+.ventana__cuerpo {
+  padding: 1rem;
+  max-height: ___vh;
+  overflow-y: ___;
+}
+
+.ventana__cuerpo::-webkit-scrollbar { width: 16px; }
+.ventana__cuerpo::-webkit-scrollbar-track { background: #e8eef5; }
+.ventana__cuerpo::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #ffffff, #b9cde4);
+  border: 1px solid #7a93b0;
+  border-radius: 3px;
+}
+
+@media (max-width: 991px) {
+  .ventana__cuerpo {
+    max-height: ___;
+  }
+}

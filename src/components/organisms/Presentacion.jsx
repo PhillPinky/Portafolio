@@ -6,9 +6,9 @@ import { perfil } from "../../data/perfil";
 const Presentacion = () => (
   <section>
     <Image src={perfil.foto} alt={perfil.alt} width={200} />
-    <Title level={2}>Quién soy</Title>
-    <Title level={3}>{perfil.nombre}</Title>
-    <Text>{perfil.descripcion}</Text>
+    <Title level={2}>¿Quién soy? ૮(•͈⌔•͈)ა</Title>
+    <Title level={4}>{perfil.nombre}</Title>
+    <Text style={{ textAlign: "justify" }}>{perfil.descripcion}</Text>
   </section>
 );
 

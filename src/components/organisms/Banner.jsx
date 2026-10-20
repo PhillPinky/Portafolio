@@ -10,7 +10,7 @@ const estilos = {
   backgroundSize: "100% 100%", 
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
-  aspectRatio: "1350 / 450", 
+  aspectRatio: "1250 / 350", 
   width: "100%",
   maxWidth: "1080px",
   margin: "0 auto",

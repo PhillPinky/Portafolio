@@ -4,9 +4,17 @@ import Title from "../atoms/Title";
 import Text from "../atoms/Text";
 import Link from "../atoms/Link";
 
-const TarjetaProyecto = ({ titulo, imagenes, repositorio, leyenda }) => (
+const TarjetaProyecto = ({ titulo, imagenes = [], repositorio, leyenda }) => (
   <Card>
-    {imagenes.length > 0 && (<Image src={imagenes[0].src} alt={imagenes[0].alt} />)}
+    {imagenes.map((img, index) => (
+      <figure key={img.id || index} style={{ margin: "0 0 1rem 0" }}>
+        <Image src={img.src} alt={img.alt} width="100%" />
+        <figcaption>
+          <Text type="secondary">{img.leyenda || img.alt}</Text>
+        </figcaption>
+      </figure>
+    ))}
+
     <Title level={3}>{titulo}</Title>
     <Text>{leyenda}</Text>
     <br />
@@ -15,4 +23,3 @@ const TarjetaProyecto = ({ titulo, imagenes, repositorio, leyenda }) => (
 );
 
 export default TarjetaProyecto;
-

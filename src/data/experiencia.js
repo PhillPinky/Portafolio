@@ -1,7 +1,7 @@
 export const experiencia = [
     {id: 1, 
-    titulo: "Ninguno.",
-    lugar: "Ninguno.", 
-    periodo: "Sin data."},
+    titulo: "Sin titulo laboral.",
+    lugar: "Sin lugar laboral.", 
+    periodo: "Sin periodo de data."},
 ];
 

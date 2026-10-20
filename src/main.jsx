@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ConfigProvider } from "antd"; // Asegúrate de importar ConfigProvider desde antd
 import Home from "./pages/Home";
+import "./index.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
