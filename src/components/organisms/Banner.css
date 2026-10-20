@@ -1,0 +1,18 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.banner__gif {
+  display: none;
+  max-width: 160px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .banner__gif {
+    display: block;
+  }
+}
